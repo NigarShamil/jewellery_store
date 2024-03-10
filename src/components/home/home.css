@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.slider-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.slider-slide {
+    width: 100%;
+    position: relative;
+}
+
+.slider_cover {
+    width: 100%;
+    height: 100vh
+}
+.slider-text-overlay_nd {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.slider-text-overlay_st {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.slide_title,
+.text-primary {
+ color: #cc9966;
+}
+
+.slide-subtitle {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+}
+
+.slide-description {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+}
+.slider-btn:hover{
+    background-color: #c15454;
+    color: white;
+}
+.banner-cover{
+    width: 100%;
+}
+.banner-st,
+.banner-rd{
+    position: relative;
+    width: 100%;
+}
+.banner-text{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h3{
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.btn{
+    transition: all 0.3s ease;
+    /* border: none; */
+}
+.banner-text .btn:hover{
+    padding:10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+
+}
+
