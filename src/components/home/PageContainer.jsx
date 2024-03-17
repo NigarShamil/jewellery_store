@@ -7,15 +7,15 @@ const PageContainer = () => {
             <div className='flex items-center'>
                 <div className='banner-st'>
                     <img src="https://molla-theme.myshopify.com/cdn/shop/files/banner-1_0a55343c-ab04-45df-a730-52e0881795c0.jpg?v=1614737572" className='banner-cover' />
-                    <div className="banner-text text-white  ">
-                        <h4 className='text-sm font-medium tracking-wide pb-3'>CLEARANCE</h4>
+                    <div className="banner-text text-white flex flex-col gap-3 ">
+                        <h4 className='text-sm font-medium tracking-wide '>CLEARANCE</h4>
                         <h3>EARRINGS
                             <br />
                             & RINGS
                             <br />
                             SAVE 30%
                         </h3>
-                        <div className='btn tracking-wide pt-8 cursor-pointer border-black border-b-2 text-blacK w-[220px]'>SHOP CLEARANCE</div>
+                        <div className='btn tracking-wide cursor-pointer border-black border-b-2 text-blacK w-[220px]'>SHOP CLEARANCE</div>
                     </div>
                 </div>
                 <div className='banner-nd w-[100%]'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiFacebookFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
-import { RiTwitterFill } from "react-icons/ri";
+import { RiTwitterXFill  } from "react-icons/ri";
 import { FaGooglePlusG } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
@@ -12,7 +12,7 @@ const UpNavbarRight = () => {
             <div className='icons flex gap-5 text-stone-400'>
                 <span><RiFacebookFill size={15} className='' /></span>
                 <span><FaInstagram size={15}/></span>
-                <span><RiTwitterFill size={15} /></span>
+                <span><RiTwitterXFill size={15} /></span>
                 <span><FaGooglePlusG size={15}/></span>
                 <span><FaYoutube size={15}/></span>
             </div>

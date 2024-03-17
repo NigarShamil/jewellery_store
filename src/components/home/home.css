@@ -15,6 +15,7 @@
     width: 100%;
     height: 100vh
 }
+
 .slider-text-overlay_nd {
     position: absolute;
     top: 55%;
@@ -22,6 +23,7 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+
 .slider-text-overlay_st {
     position: absolute;
     top: 50%;
@@ -32,7 +34,7 @@
 
 .slide_title,
 .text-primary {
- color: #cc9966;
+    color: #cc9966;
 }
 
 .slide-subtitle {
@@ -45,19 +47,23 @@
     font-size: 16px;
     font-family: "Playfair Display", serif;
 }
-.slider-btn:hover{
+
+.slider-btn:hover {
     background-color: #c15454;
     color: white;
 }
-.banner-cover{
+
+.banner-cover {
     width: 100%;
 }
+
 .banner-st,
-.banner-rd{
+.banner-rd {
     position: relative;
     width: 100%;
 }
-.banner-text{
+
+.banner-text {
     position: absolute;
     text-align: center;
     z-index: 1;
@@ -70,20 +76,73 @@
     justify-content: center;
     align-items: center;
 }
-.banner-text h3{
+
+.col_banner {
+    position: relative;
+}
+
+.col_text {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    left: 70%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+
+.quality_text {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+
+.banner-text h3,
+.col_text h3,
+.quality_text h3 {
     font-family: "Playfair Display", serif;
     font-size: 2.2rem;
     font-weight: 400;
 }
-.btn{
+
+.banner-text .btn {
+    padding: 10px;
     transition: all 0.3s ease;
-    /* border: none; */
+    outline: none;
 }
-.banner-text .btn:hover{
-    padding:10px;
+
+.banner-text .btn:hover {
+    padding: 10px;
     border: 1px solid black;
     background-color: black;
     color: white;
-
 }
 
+.quality_cover{
+    height: 70vh;
+}
+
+.col_text .btn:hover,
+.quality_text .btn:hover {
+    padding: 10px;
+    border: 1px solid #cc9966;
+    background-color: #cc9966;
+    color: white;
+}
+
+.col_text .btn,
+.quality_text .btn {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #cc9966;
+    color: #cc9966;
+    padding: 10px;
+}
+
+.banner-desc{
+    font-family: "Playfair Display", serif;
+}
+.quality_subt,
+.quality_desc {
+    font-family: "Poppins", serif;
+}
