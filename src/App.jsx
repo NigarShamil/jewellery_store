@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import { SliderComp } from './components/home/SliderComp'
 import PageContainer from './components/home/PageContainer'
 import Home from './components/home/Home'
-import NewArrival from './components/NewArrival/NewArrival'
+import NewArrival from './components/ProductsDesign/NewArrival'
 import Footer from './components/footer/Footer'
 import LogIn from './components/login/LogIn'
 import About from './components/about/About'
@@ -13,7 +13,8 @@ import Faq from './components/FAQ/Faq'
 import ShoppingCart from './components/cart/ShoppingCart'
 import HighQuality from './components/home/HighQuality'
 import Content from './components/Contents/Content'
-import Categories from './components/Categories'
+import Categories from './components/ProductsDesign/Categories'
+import BestSeller from './components/ProductsDesign/BestSeller'
 
 
 
