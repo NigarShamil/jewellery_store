@@ -5,6 +5,7 @@ import { BsTruck } from "react-icons/bs";
 import { IoIosLock } from "react-icons/io";
 import { IoReloadSharp } from "react-icons/io5";
 import "./content.css"
+import PopularProducts from './PopularProducts';
 
 const Content = () => {
     return (
@@ -15,6 +16,7 @@ const Content = () => {
                     <div className='mt-[10px]'>
                         <div className='flex justify-center items-center '><div className='bg-gradient-to-r from-transparent to-black h-[1px] w-[75px] mx-3'></div><GiCutDiamond /><div className='bg-gradient-to-r from-black to-transparent h-[1px] w-[75px] mx-3'></div></div>
                     </div>
+                    <PopularProducts/>
                 </div>
                 <div className='lookBook flex flex-col justify-center items-center '>
                     <h2 className='text-2xl'>LOOKBOOK</h2>
