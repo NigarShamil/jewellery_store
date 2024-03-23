@@ -1,22 +1,45 @@
-import React from 'react'
-import NavbarRight from './NavbarRight'
-import Logo from "../../assets/images/covers/logo.png"
-import NavbarLeft from './NavbarLeft'
-import { GiCutDiamond } from "react-icons/gi";
+
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import NavbarRight from './NavbarRight';
+import Logo from "../../assets/images/covers/logo.png";
+import NavbarLeft from './NavbarLeft';
 
 const NavbarMain = () => {
-  return (
-    <div className='flex items-center justify-between  text-center'>
-         <div><NavbarLeft/></div>
-         <div><img className='w-[150px]' src={Logo} alt="logo" /></div>
-         {/* <div className='flex flex-col justify-center items-center text-center'>
-          <p><GiCutDiamond size={30}/></p>
-          <p className='logo text-6xl'>Joyería</p>
-         </div> */}
-        <div><NavbarRight/></div>
-       
-    </div>
-  )
-}
+  const navigate = useNavigate();
+  const [cartOpen, setCartOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
-export default NavbarMain
+  useEffect(() => {
+    const handleScroll = () => {
+      // Change the state based on the scroll position
+      if (window.pageYOffset > 0) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className={`${isFixed ? 'fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2 ' : ''}`}>
+      <div className='w-10/12 m-auto flex items-center justify-between'>
+        <div><NavbarLeft/></div>
+        <div className='cursor-pointer' onClick={()=> navigate('/')}>
+          <img className='w-[150px]' src={Logo} alt="logo" />
+        </div>
+        <div><NavbarRight setCartOpen={setCartOpen}/></div>
+      </div>
+    </div>
+  );
+};
+
+export default NavbarMain;

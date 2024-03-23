@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300&family=Work+Sans:wght@300&display=swap');
+
 
 .arrival {
     font-family: "Playfair Display", serif;
@@ -16,15 +17,35 @@
 .product:hover .pro-text {
     height: 160px;
     cursor: pointer;
- 
+
 }
+
 .product:hover .stars,
-.product:hover .add{
+.product:hover .add {
     display: inline-flex;
 }
-.product:hover .add:hover{
+
+.product:hover .add:hover {
     border: 1px solid black;
 }
 
+.description {
+    font-family: "Poppins", sans-serif;
+}
 
+.adding {
+    border: 1px solid #cc9966;
+    background-color: #cc9966;
+    color: #fff;
+}
 
+.adding:hover {
+    background-color: #c15454;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ask {
+    border-bottom: 1px solid #cc9966;
+    width: 180px;
+}

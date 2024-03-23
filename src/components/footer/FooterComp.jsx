@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FaFacebookF } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaGooglePlusG } from "react-icons/fa";
@@ -6,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 const FooterComp = () => {
+    const navigate =useNavigate()
     return (
         <div className='flex justify-between'>
             <div className='about m-4 '>
@@ -22,11 +24,10 @@ const FooterComp = () => {
             <div className="links m-4 ">
                 <h4 className='text-xl cursor-pointer'>Useful Links</h4>
                 <ul className='text pt-3 text-zinc-400 cursor-pointer'>
-                    <li className='pb-1 cursor-pointer'>About Joyería</li>
-                    <li className='pb-1 cursor-pointer'>How to shop on Joyería</li>
-                    <li className='pb-1 cursor-pointer'>FAQ's</li>
-                    <li className='pb-1 cursor-pointer'>Contact us</li>
-                    <li className='pb-1 cursor-pointer'>Log in</li>
+                    <li onClick={()=> navigate('/about')}  className='pb-1 cursor-pointer'>About Joyería</li>
+                    <li onClick={()=> navigate('/faq')}  className='pb-1 cursor-pointer'>FAQ's</li>
+                    <li onClick={()=> navigate('/contact')}  className='pb-1 cursor-pointer'>Contact us</li>
+                    <li onClick={()=> navigate('/login')}  className='pb-1 cursor-pointer'>Log in</li>
                 </ul>
             </div>
             <div className='services m-4 '>

@@ -1,9 +1,10 @@
+
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Register = () => {
     return (
-        <div>
+        <div className='w-[600px] bg-gray-200 p-4 '>
             <div className='form_register p-4 text-zinc-500 '>
                 <div className="email flex flex-col py-2">
                     <label htmlFor="email" >Your email address *</label>

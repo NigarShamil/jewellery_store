@@ -5,9 +5,9 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <div className='footer text-white p-5'>
+        <div className='footer text-white p-6'>
             <div className='up_footer flex flex-col justify-center items-center '>
-                <div className='title pb-2 m-4 text-center '>
+                <div className='title pb-5 m-4 text-center '>
                     <h2 className='text-3xl mt-4'>GET THE LATEST DEALS</h2>
                     <p className='text-sm pt-2'>and receive $20 coupon for first shopping</p>
                 </div>

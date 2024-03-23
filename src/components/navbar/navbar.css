@@ -4,11 +4,12 @@
 .logo{
   font-family: "Fleur De Leah", cursive;
 }
+
 .icons span:hover,
 .call:hover,
 .login:hover,
 .switch:hover,
-.cart:hover,
+.cartIcon:hover,
 .like:hover {
   color: #cc9966;
   cursor: pointer;

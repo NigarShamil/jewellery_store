@@ -1,13 +1,15 @@
 import React from 'react'
 import products from "../../assets/data/products.json";
+import { useNavigate } from 'react-router-dom'
 import { CiStar } from "react-icons/ci";
 
 const PopularProducts = () => {
+    const navigate = useNavigate()
     return (
         <>
             <div className='flex flex-col justify-center items-center h-[530px]'>
                 {products.slice(8, 11).map((product) => (
-                    <div key={product.id} className='pop flex justify-center items-center  py-6 border-b'>
+                    <div onClick={() => navigate(`products/${product?.id}`)} key={product.id} className='pop flex justify-center items-center  py-6 border-b cursor-pointer'>
                         <img
                             className="w-[88px]"
                             src={product.images && product.images[0]}

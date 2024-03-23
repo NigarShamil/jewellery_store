@@ -1,27 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .cart_cover {
-    font-family: "Poppins", sans-serif;
-    position: relative;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.cart,
+.cartField {
+  font-family: "Poppins", sans-serif;
 }
 
 .cart_title {
-    position: absolute;
-    left: 41%;
-    bottom: 35%;
+  position: absolute;
+  left: 41%;
+  bottom: 35%;
 }
 
 .cart_title p,
 .continue {
-    color: #cc9966;
+  color: #cc9966;
 }
 
 .continue {
-    width: 180px;
-    border: 1px solid #cc9966;
+  width: 180px;
+  border: 1px solid #cc9966;
 }
-.continue:hover{
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all .3s ease-in-out;
+
+.continue:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .3s ease-in-out;
+}
+
+.bag {
+  border: 1px solid #cc9966;
+  color: #cc9966;
+}
+
+.cart {
+  position: relative;
+}
+
+.cartItem {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  z-index: 88;
+  overflow-y: auto;
+}
+
+.cardhide {
+  display: none;
+}
+
+.cartItem .title .icon {
+  font-size: 25px;
+}
+
+.emptyCard {
+  text-align: center;
+}
+
+.emptyCard img {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.cartContent {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartContent .img {
+  width: 105px;
+  height: 105px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.cartContent .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105px;
+  height: 105px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cartContent .remove {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 17px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cartContent:hover .img::after,
+.cartContent:hover .remove {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cartContent img {
+  width: 100%;
+  height: 100%;
+}
+
+.cartContent .details label {
+  display: block;
+  margin: 10px 0;
+}
+
+.cartContent .details .qty {
+  text-align: center;
+  width: 40px;
+  background-color: #212121;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+}
+
+.cartContent .details button {
+  height: 25px;
+  width: 25px;
+  background-color: #212121;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.cartContent .price .priceTitle {
+  font-size: 15px;
 }

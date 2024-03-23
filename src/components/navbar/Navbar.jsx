@@ -7,14 +7,13 @@ import "./navbar.css"
 const Navbar = () => {
     return (
         <div >
-            <div className='w-10/12 m-auto'>
+            <div className='mx-5'>
                 <UpNavbar />
-                <NavbarMain />
+                <NavbarMain/>
             </div>
             <div className='line h-14 flex justify-end'>
-                <div className='text-white flex items-center px-4 gap-3'><IoDiamondOutline className='line-icon'/> CLEARANCE UP TO 30% OFF</div>
+                <div className='text-white flex items-center px-4 gap-3'><IoDiamondOutline className='line-icon' /> CLEARANCE UP TO 30% OFF</div>
             </div>
-
         </div>
     )
 }
