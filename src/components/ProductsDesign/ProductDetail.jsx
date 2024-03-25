@@ -24,17 +24,20 @@ export default function ProductDetail() {
   };
 
   const decrement = () => {
+    console.log("Decreasing quantity");
     if (quantity > 1) {
-      setQuantity(quantity - 1);
+      setQuantity(prevQuantity => prevQuantity - 1);
     }
   };
-
+  
   const increment = () => {
-    if (quantity < product.quantity) {
-      setQuantity(quantity + 1);
+    console.log("Increasing quantity");
+    if (product.quantity && quantity < product.quantity) {
+      setQuantity(prevQuantity => prevQuantity + 1);
     }
   };
-
+  
+  
   const addCart = () => {
     dispatch(
       addToCart({
@@ -84,7 +87,9 @@ export default function ProductDetail() {
           <p className="text-sm py-3">{product.description}</p>
           <div className="py-5 flex border-b">
             <div className="border p-2 w-[120px] flex justify-between items-center mr-5">
-              <span onClick={decrement} className="cursor-pointer">-</span><span>{product.quantity}</span><span onClick={increment} className="cursor-pointer">+</span>
+              <span onClick={decrement} className="cursor-pointer">-</span>
+              <span>{quantity}</span>
+              <span onClick={increment} className="cursor-pointer">+</span>
             </div>
             <div onClick={addCart} className="adding p-2 w-[300px] flex justify-center items-center gap-3 cursor-pointer"><MdAddShoppingCart /> Add to Cart</div>
           </div>

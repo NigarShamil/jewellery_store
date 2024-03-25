@@ -13,7 +13,7 @@ const ShoppingCart = () => {
 
     useEffect(() => {
         dispatch(getCartTotal())
-    }, [dispatch])
+    }, [dispatch,carts])
     return (
         <>
             <div className='flex flex-col justify-center items-center'>

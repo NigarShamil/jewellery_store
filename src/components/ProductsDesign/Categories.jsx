@@ -26,25 +26,27 @@
 
 // export default Categories;
 
-import React from 'react';
-import { category } from '../../assets/data/categories';
+// import React from 'react';
+// import { category } from '../../assets/data/categories';
 
-const Categories = () => {
-    return (
-        <div>
-            <div className='container m-auto'>
-                {category.map((item) => (
-                    <div className='category' key={item.id}>
-                        <div className='flex justify-center items-center text-center px-3 cursor-pointer text-lg text-zinc-400'>
-                            <p>{item.title}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
+// const Categories = () => {
+//     return (
+//         <div>
+//             <div className='container m-auto'>
+//                 {category.map((item) => (
+//                     <div className='category' key={item.id}>
+//                         <div className='flex justify-center items-center text-center px-3 cursor-pointer text-lg text-zinc-400'>
+//                             <p>{item.title}</p>
+//                         </div>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
 
-export default Categories;
+// export default Categories;
+
+
 
 
