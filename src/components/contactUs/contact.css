@@ -1,18 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.contact{
+.contact {
     font-family: "Poppins", sans-serif;
 }
-.form_btn{
+
+.form_btn {
     border: 1px solid #cc9966;
     color: #cc9966;
 }
+
 .contact_logo,
-.view_map{
+.view_map {
     color: #cc9966;
 }
+
 .view_map:hover {
     width: 100px;
     border-bottom: 1px solid #cc9966;
     padding-bottom: 5px;
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    .banner_text {
+        bottom: 50%;
+        left: 40%;
+    }
+
+    .contact .info {
+        width: 500px;
+    }
+
+    .office_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info .info {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info .main_info {
+        width: 400px;
+    }
+
+    .contact_info .office {
+        width: 400px;
+        padding-top: 2rem;
+    }
+
+    .office .two_piece input {
+        width: 200px;
+    }
+
+    .office input {
+        width: 300px;
+    }
+
+    .stores {
+        width: 450px;
+    }
+
+    .first_store,
+    .second_store {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first_store .st_img img,
+    .second_store .nd_img img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+    .banner_text {
+        bottom: 57%;
+        left: 40%;
+    }
+
+    .office .two_piece {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .office {
+        width: 300px;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .office input {
+        width: 280px;
+    }
+
+    .office p {
+        width: 280px;
+    }
+
+    .office_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info .info {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_info .main_info {
+        width: 300px;
+    }
+
+    .contact_info .office {
+        width: 300px;
+        padding-top: 2rem;
+    }
+
+    .contact_info {
+        width: 300px;
+    }
+
+    .stores {
+        width: 300px;
+    }
+
+    .first_store,
+    .second_store {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first_store .st_img img,
+    .second_store .nd_img img {
+        width: 300px;
+    }
+
+    .placeStore {
+        width: 300px;
+    }
 }

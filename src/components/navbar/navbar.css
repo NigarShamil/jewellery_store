@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
-.logo{
+.logo {
   font-family: "Fleur De Leah", cursive;
 }
 
@@ -14,14 +14,79 @@
   color: #cc9966;
   cursor: pointer;
 }
-.qty{
-    background-color: #cc9966;
+
+.qty {
+  background-color: #cc9966;
 }
-.line{
+
+.line {
   background-color: #222;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-.line-icon{
+
+.line-icon {
   color: #cc9966;
+}
+
+.dropdown-toggle,
+.dropdown-content {
+  display: none;
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  .dropdown-toggle {
+    display: flex;
+    z-index: 30;
+  }
+
+  .dropdown-content {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    box-shadow: #222;
+    ;
+  }
+
+  .dropdown-content span:hover {
+    color: #cc9966;
+  }
+
+  .up-navbar-right .links {
+    display: none;
+  }
+
+  .wholeNav .line {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .right .like-icon,
+  .right .icons {
+   font-size: 8px;
+  }
+  .right .qty{
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+  }
+  .fixed .centered{
+    width: 100%;
+  }
+  .centered .joyeria{
+    min-width: 80px;
+  }
+  .search input{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+  .searchField .search{
+    display: none;
+  }
+  .up-navbar-right .links {
+    display: none;
+  }
 }

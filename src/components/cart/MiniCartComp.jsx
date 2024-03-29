@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux"
 import { AiOutlineClose } from 'react-icons/ai';
 import { removeFromCart } from '../../store/cartSlice';
 import { LiaTimesSolid } from "react-icons/lia";
+import "./cart.css"
 
 
 const MiniCartComp = ({ cart }) => {
@@ -34,3 +35,6 @@ const MiniCartComp = ({ cart }) => {
 };
 
 export default MiniCartComp; 
+
+MiniCartComp.js
+

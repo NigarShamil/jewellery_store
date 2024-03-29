@@ -6,10 +6,11 @@ import { FaGooglePlusG } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
+
 const FooterComp = () => {
     const navigate =useNavigate()
     return (
-        <div className='flex justify-between'>
+        <div className='footerComp flex justify-center flex-wrap gap-[70px] '>
             <div className='about m-4 '>
                 <h4 className='text-xl cursor-pointer'>About Joyería</h4>
                 <p className='w-[300px] pt-3 cursor-pointer text-zinc-400'>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
@@ -27,7 +28,7 @@ const FooterComp = () => {
                     <li onClick={()=> navigate('/about')}  className='pb-1 cursor-pointer'>About Joyería</li>
                     <li onClick={()=> navigate('/faq')}  className='pb-1 cursor-pointer'>FAQ's</li>
                     <li onClick={()=> navigate('/contact')}  className='pb-1 cursor-pointer'>Contact us</li>
-                    <li onClick={()=> navigate('/login')}  className='pb-1 cursor-pointer'>Log in</li>
+                    <li onClick={()=> navigate('/signIn')}  className='pb-1 cursor-pointer'>Log in</li>
                 </ul>
             </div>
             <div className='services m-4 '>
@@ -45,8 +46,8 @@ const FooterComp = () => {
                 <h4 className='text-xl cursor-pointer'>My Account</h4>
                 <ul className='text pt-3 text-zinc-400 '>
                     <li className='pb-1 cursor-pointer'>Sign In</li>
-                    <li className='pb-1 cursor-pointer'>View Cart</li>
-                    <li className='pb-1 cursor-pointer'>My Wishlist</li>
+                    <li onClick={()=> navigate('/cart')} className='pb-1 cursor-pointer'>View Cart</li>
+                    <li onClick={()=> navigate('/like')} className='pb-1 cursor-pointer'>My Wishlist</li>
                     <li className='pb-1 cursor-pointer'>Track My Order</li>
                     <li className='pb-1 cursor-pointer'>Help</li>
                 </ul>

@@ -19,3 +19,15 @@
 .pop {
     font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+    .lookBook{
+        width: 300px;
+    }
+    .look_banner {
+        width: 300px;
+    }
+    .pop{
+        width: 200px;
+    }
+}

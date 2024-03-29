@@ -48,10 +48,14 @@ export const MiniCart = ({ cartOpen, setCartOpen }) => {
         }
         <div className='flex gap-6 justify-around items-center text-center mt-4'>
           <div onClick={()=> navigate('/cart')} className="bag p-2 w-[130px] hover:bg-[#cc9966] hover:text-white cursor-pointer">Your Bag</div>
-          <div className="checkout bg-[#cc9966] p-2 text-white w-[130px] hover:bg-[#c15454]">Checkout</div>
+          <div onClick={() => navigate('/checkout')}  className="checkout bg-[#cc9966] p-2 text-white w-[130px] hover:bg-[#c15454] cursor-pointer">Checkout</div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
 

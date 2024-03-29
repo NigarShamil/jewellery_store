@@ -1,11 +1,12 @@
 import React from 'react'
+import './home.css'
 
 const HighQuality = () => {
   return (
-    <div>
+    <div className='highQuality'>
       <div className="quality_banner relative">
-        <img src="https://molla-theme.myshopify.com/cdn/shop/files/banner-5_13f87845-4db2-4f26-8174-0adb31710889.jpg?v=1614737649" className='quality_cover ' />
-        <div className='quality_text  flex flex-col justify-center items-center gap-3'>
+        <img src="https://molla-theme.myshopify.com/cdn/shop/files/banner-5_13f87845-4db2-4f26-8174-0adb31710889.jpg?v=1614737649" className='quality_cover w-[100%]' />
+        <div className='quality_text  flex flex-col justify-center items-center text-center gap-3'>
           <h3 className='quality_title '>HIGH QUALITY SINCE 2001</h3>
           <p className='quality_subt'>Everything you need to complete the perfect collection.</p>
           <p className='quality_desc text-sm text-gray-500 text-center '>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam

@@ -4,6 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import {  removeFromLike } from '../../store/wishSlice';
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { addToCart } from '../../store/cartSlice';
+import "./cart.css"
 
 const LikedComp = ({ liked }) => {
     const dispatch = useDispatch();

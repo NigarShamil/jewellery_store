@@ -1,12 +1,13 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
+import './contact.css'
 
 
 
 const PlaceStore = () => {
     return (
         <>
-            <div className='flex flex-col justify-center items-center my-5'>
+            <div className='placeStore flex flex-col justify-center items-center my-5'>
                 <h2 className='text-2xl mb-5 font-medium'>Our Stores</h2>
                 <div className='stores flex flex-wrap gap-[80px] justify-center'>
                     <div className="first_store w-[500px] flex mx-6">

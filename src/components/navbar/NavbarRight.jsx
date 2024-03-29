@@ -40,6 +40,7 @@ import { useNavigate } from 'react-router-dom'
 import { MiniCart } from '../cart/MiniCart';
 import { getCartTotal } from '../../store/cartSlice';
 import { getLikeTotal } from '../../store/wishSlice';
+import "./navbar.css"
 
 
 
@@ -64,7 +65,7 @@ const NavbarRight = () => {
    
 
     return (
-        <div className="flex items-center gap-12">
+        <div className="right flex items-center gap-12">
             <div onClick={() => navigate('/like')} className="like relative">
                 <div className="qty absolute -top-2 -right-3 text-white rounded-full w-5 h-5 flex items-center justify-center">{likeCount}</div>
                 <AiOutlineHeart className="like-icon cursor-pointer" size={25} />

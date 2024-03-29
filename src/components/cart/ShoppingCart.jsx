@@ -26,20 +26,19 @@ const ShoppingCart = () => {
                 </div>
                 {
                     carts?.length > 0 ? (
-                        <div>
+                        <div className='cart_view'>
                             {
                                 carts.map((cart, index) => (
                                     <CartComp key={index} cart={cart} />
                                 ))
                             }
                             <div className='cart_total flex items-center justify-end text-xl border-t py-3'>Total Price: <span className='font-medium text-xl ml-2'>{totalAmount} $</span></div>
-                            <div>
+                            <div className='textarea'>
                                 <textarea className='review border p-2 bg-zinc-50' id="review" name="review" rows="5" cols="70" placeholder='Special instructions for seller'></textarea>
                                 <div className='flex gap-5 items-center my-5'>
                                     <input type="text" name="code" id="code" placeholder='Your code here' className='border p-2 bg-zinc-50' />
                                     <div className='border p-2 text-center w-[100px] bg-[#cc9966] text-white cursor-pointer hover:bg-[#c15454]'>Save</div>
                                 </div>
-
                             </div>
 
                         </div>

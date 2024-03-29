@@ -11,7 +11,7 @@ import PlaceStore from './PlaceStore';
 const ContactUs = () => {
     return (
         <>
-            <div className='contact w-100 flex flex-col justify-center items-center m-auto'>
+            <div className='contact  flex flex-col justify-center items-center m-auto'>
                 <div className='about_cover mb-5'>
                     <img src="https://molla-theme.myshopify.com/cdn/shop/files/about-header-bg.jpg?v=1614728545" className='about_banner relative' />
                     <div className='banner_text text-center text-white'>

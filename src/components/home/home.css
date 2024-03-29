@@ -6,16 +6,6 @@
     overflow: hidden;
 }
 
-.slider-slide {
-    width: 100%;
-    position: relative;
-}
-
-.slider_cover {
-    width: 100%;
-    height: 80vh
-}
-
 .slider-text-overlay_nd {
     position: absolute;
     top: 55%;
@@ -53,16 +43,6 @@
     color: white;
 }
 
-.banner-cover {
-    width: 100%;
-}
-
-.banner-st,
-.banner-rd {
-    position: relative;
-    width: 100%;
-}
-
 .banner-text {
     position: absolute;
     text-align: center;
@@ -71,14 +51,6 @@
     left: 50%;
     bottom: 25%;
     transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.col_banner {
-    position: relative;
 }
 
 .col_text {
@@ -119,7 +91,7 @@
     color: white;
 }
 
-.quality_cover{
+.quality_cover {
     height: 70vh;
 }
 
@@ -139,10 +111,191 @@
     padding: 10px;
 }
 
-.banner-desc{
+.banner-desc {
     font-family: "Playfair Display", serif;
 }
+
 .quality_subt,
 .quality_desc {
     font-family: "Poppins", serif;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 770px) {
+
+    .slider-text-overlay_st {
+        top: 55%;
+        left: 40%;
+    }
+
+    .slider-text-overlay_st .slide_title,
+    .slider-text-overlay_st .slide-subtitle,
+    .slider-text-overlay_st .slide-description {
+        font-size: 2.5rem;
+    }
+
+    .slider-text-overlay_st .slide-description span {
+        font-size: 3rem;
+    }
+
+    .slide-description .slider-btn {
+        font-size: 2rem;
+    }
+
+    .slider-text-overlay_nd {
+        top: 55%;
+        left: 70%;
+    }
+
+    .slider-text-overlay_nd .slide_title,
+    .slider-text-overlay_nd .slide-subtitle,
+    .slider-text-overlay_nd .slide-description {
+        font-size: 2rem;
+    }
+
+    .col_banner .banner-desc {
+        width: 400px;
+    }
+
+    .quality_banner .quality_title {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 500px) {
+    .banners .flex {
+        flex-direction: column;
+    }
+
+    .banner-st,
+    .banner-nd,
+    .banner-rd {
+        width: 100%;
+    }
+
+    .col_banner {
+        text-align: center;
+    }
+
+    .col_text {
+        left: 48%;
+    }
+
+    .slider-text-overlay_st {
+        top: 50%;
+        left: 40%;
+    }
+
+    .slider-text-overlay_st .slide_title,
+    .slider-text-overlay_st .slide-subtitle,
+    .slider-text-overlay_st .slide-description {
+        font-size: 2rem;
+    }
+
+    .slider-text-overlay_nd {
+        top: 55%;
+        left: 80%;
+    }
+
+    .slider-text-overlay_nd .slide_title,
+    .slider-text-overlay_nd .slide-subtitle,
+    .slider-text-overlay_nd .slide-description {
+        font-size: 1.8rem;
+    }
+
+    .quality_banner .quality_title {
+        width: 480px;
+    }
+
+    .quality_text .quality_title {
+        font-size: 1.5rem;
+    }
+
+    .quality_text .quality_subt {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+    .banners .flex {
+        flex-direction: column;
+    }
+
+    .banner-st .banner-cover,
+    .banner-nd .banner-cover,
+    .banner-rd .banner-cover {
+        width: 280px;
+    }
+
+    .slider-text-overlay_st {
+        top: 50%;
+        left: 40%;
+    }
+
+    .slider-text-overlay_st .slide_title,
+    .slider-text-overlay_st .slide-subtitle,
+    .slider-text-overlay_st .slide-description {
+        font-size: 1rem;
+    }
+
+    .slider-text-overlay_nd {
+        top: 55%;
+        left: 60%;
+    }
+
+    .slider-text-overlay_nd .slide_title,
+    .slider-text-overlay_nd .slide-subtitle,
+    .slider-text-overlay_nd .slide-description {
+        font-size: 1rem;
+
+    }
+
+    .slider-text-overlay_nd .slide-subtitle,
+    .slider-text-overlay_nd .slide-description {
+        width: 150px;
+    }
+
+    .quality_banner .quality_title {
+        width: 300px;
+    }
+
+    .quality_text .quality_title {
+        font-size: 1rem;
+    }
+
+    .quality_text .quality_subt {
+        font-size: 14px;
+    }
+
+    .col_banner {
+        text-align: center;
+    }
+
+    .col_text h3 {
+        font-size: 1.3rem;
+    }
+
+    .col-cover {
+        height: 90vh;
+    }
+
+    .col_banner .banner-desc {
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .col_text {
+        left: 45%;
+    }
+
+    .col_text .banner-desc {
+        width: 300px;
+    }
+
+    .slider-slide .slider-btn {
+        padding: 5px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
 }

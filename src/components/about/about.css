@@ -81,3 +81,81 @@
     font-size: 14px;
 }
 
+@media screen and (max-width: 750px) and (min-width: 700px){
+    .banner_text{
+        bottom: 50%;
+    }
+    .brands .brands_text {
+        width: 280px;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 500px){
+    .banner_text{
+        bottom: 50%;
+    }
+    .brands .brands_text {
+        width: 280px;
+    }
+    
+    .about .our{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .our .vision,
+    .our .mission{
+        width: 320px;
+    }
+    .who .weAre{
+        width: 320px;
+    }
+    .brands .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .brands .brands_text {
+        width: 280px;
+    }
+    .brands .brands_text h2{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 350px) {
+    .banner_text{
+        bottom: 50%;
+        left: 40%;
+    }
+    .banner_text h2{
+        font-size: 1rem;
+    }
+    .brands {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .branIcon {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+    }
+    .brands .brands_text {
+        width: 280px;
+    }
+    .brands .brands_text h2{
+        font-size: 1.2rem;
+    }
+    .about .our{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .our .vision,
+    .our .mission{
+        width: 320px;
+    }
+    .who .weAre{
+        width: 320px;
+    }
+  }

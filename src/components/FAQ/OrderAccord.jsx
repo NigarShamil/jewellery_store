@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { MdExpandLess } from "react-icons/md";
 import { MdExpandMore } from "react-icons/md";
+import "./faq.css"
 
 const OrderAccord = () => {
 

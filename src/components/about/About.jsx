@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Footer from '../footer/Footer';
+
 
 
 const About = () => {
@@ -12,8 +12,8 @@ const About = () => {
         <>
             <div className=' about w-100 flex flex-col justify-center items-center m-auto'>
                 <div className='about_cover'>
-                    <img src="https://molla-theme.myshopify.com/cdn/shop/files/about-header-bg.jpg?v=1614728545" className='about_banner relative' />
-                    <div className='banner_text text-center text-white'>
+                    <img src="https://molla-theme.myshopify.com/cdn/shop/files/about-header-bg.jpg?v=1614728545" className='about_banner relative w-[100%]' />
+                    <div className='banner_text text-center text-white block'>
                         <h3 className='text-2xl'>About Us</h3>
                         <p className='text-lg'>Who we are</p>
                     </div>
@@ -48,15 +48,15 @@ const About = () => {
                         </div>
                     </div>
                     <div className="who_cover ">
-                        <img src="https://molla-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614728545" className='who_banner' />
+                        <img src="https://molla-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614728545" className='who_banner w-[100%]' />
                     </div>
                 </div>
-                <div className='brands grid grid-cols-2 h-[300px] gap-5 mt-5 p-4'>
+                <div className='brands grid grid-cols-2 h-[400px] gap-5 mt-5 p-4'>
                     <div className="brands_text w-[500px]">
                         <h2 className='text-2xl mb-4 font-medium'>The world's premium design brands in one destination.</h2>
                         <p className='text-sm leading-loose'>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nis</p>
                     </div>
-                    <div className='grid grid-cols-3 '>
+                    <div className='branIcon grid grid-cols-3 '>
                         <img src="https://molla-theme.myshopify.com/cdn/shop/files/logo-1_240x.png?v=1614728542" />
                         <img src="https://molla-theme.myshopify.com/cdn/shop/files/logo-5_240x.png?v=1614728542" />
                         <img src="https://molla-theme.myshopify.com/cdn/shop/files/logo-6_240x.png?v=1614728542" />
@@ -116,7 +116,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

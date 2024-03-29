@@ -11,6 +11,7 @@ import { FaPinterestP } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
 import products from "../../assets/data/products.json";
+import "./products.css"
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -29,15 +30,15 @@ export default function ProductDetail() {
       setQuantity(prevQuantity => prevQuantity - 1);
     }
   };
-  
+
   const increment = () => {
     console.log("Increasing quantity");
     if (product.quantity && quantity < product.quantity) {
       setQuantity(prevQuantity => prevQuantity + 1);
     }
   };
-  
-  
+
+
   const addCart = () => {
     dispatch(
       addToCart({
@@ -62,21 +63,22 @@ export default function ProductDetail() {
   return (
     <>
       <div className="product-detail w-100 flex justify-center m-auto p-5 ">
-        <div className="flex">         <div className="flex flex-col mx-6">
-          {product.images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={product.title}
-              className={`w-[130px] pb-5 cursor-pointer ${selectedImageIndex === index ? 'border-2 border-[#cc9966]' : ''}`}
-              onClick={() => handleThumbnailClick(index)}
-            />
-          ))}
-        </div>
+        <div className="productD flex">
+          <div className="detailPhotos mx-6">
+            {product.images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={product.title}
+                className={`w-[150px] selecImg pb-5 cursor-pointer ${selectedImageIndex === index ? 'border-2 border-[#cc9966]' : ''}`}
+                onClick={() => handleThumbnailClick(index)}
+              />
+            ))}
+          </div>
           <img
             src={product.images[selectedImageIndex]}
             alt={product.title}
-            className="w-[420px]"
+            className="mainImg w-[420px]"
           />
         </div>
         <div className="description w-[600px] p-5 ">
@@ -84,8 +86,8 @@ export default function ProductDetail() {
           <div className="stars flex gap-2 items-center text-center pt-2 text-zinc-400  "><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /> <span>No reviews</span></div>
           <p className=" text-zinc-500 pt-2">Vendor : {product.category}</p>
           <p className="text-2xl py-3">${product.price}</p>
-          <p className="text-sm py-3">{product.description}</p>
-          <div className="py-5 flex border-b">
+          <p className="desc text-sm py-3">{product.description}</p>
+          <div className="buttons py-5 flex border-b">
             <div className="border p-2 w-[120px] flex justify-between items-center mr-5">
               <span onClick={decrement} className="cursor-pointer">-</span>
               <span>{quantity}</span>

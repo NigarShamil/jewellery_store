@@ -17,7 +17,6 @@
 .product:hover .pro-text {
     height: 160px;
     cursor: pointer;
-
 }
 
 .product:hover .stars,
@@ -48,4 +47,89 @@
 .ask {
     border-bottom: 1px solid #cc9966;
     width: 180px;
+}
+
+@media screen and (max-width: 1150px) {
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .pro-img-container {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    .productD {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productD .mainImg {
+        width: 350px;
+    }
+
+    .detailPhotos {
+        display: flex;
+    }
+
+    .product-detail .description {
+        width: 450px;
+    }
+
+    .description .adding {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 280px) {
+    .productD {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider-container .categories {
+        font-size: 14px;
+    }
+
+    .productD .mainImg {
+        width: 300px;
+    }
+
+    .productD .selecImg {
+        width: 70px;
+    }
+
+    .detailPhotos {
+        display: flex;
+    }
+
+    .product-detail .description {
+        width: 300px;
+    }
+
+    .description h2 {
+        font-size: 1rem;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .description .desc {
+        width: 250px;
+    }
+
+    .describtion {
+        width: 280px;
+    }
+
+    .description .adding {
+        width: 150px;
+        font-size: 12px;
+    }
+
 }

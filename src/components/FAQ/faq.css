@@ -52,3 +52,16 @@
     color: #cc9966;
 }
 
+@media screen and (max-width: 500px) and (min-width: 300px){
+    .faq_title{
+        position: absolute;
+        left: 35%;
+        bottom: 35%;
+    }
+    .faq_container h2{
+        font-size: 1.3rem;
+    }
+    .accordion-item h2{
+        font-size: 1rem;
+    }
+}

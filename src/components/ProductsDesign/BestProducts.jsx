@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { useDispatch } from 'react-redux';
 import { CiStar } from "react-icons/ci";
@@ -17,11 +17,32 @@ export default function Products() {
     const navigate = useNavigate();
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState("ALL");
+    const [slidesToShow, setSlidesToShow] = useState(4); 
+
+    useEffect(() => {
+        const updateSlidesToShow = () => {
+            if (window.innerWidth <= 1000 && window.innerWidth >= 700) {
+                setSlidesToShow(2);
+            } else if (window.innerWidth < 700) {
+                setSlidesToShow(1);
+            } else {
+                setSlidesToShow(4);
+            }
+        };
+
+        updateSlidesToShow();
+
+        window.addEventListener("resize", updateSlidesToShow);
+
+        return () => {
+            window.removeEventListener("resize", updateSlidesToShow);
+        };
+    }, []);
 
     const settings = {
         dots: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         infinite: true,
         autoplay: true,
@@ -68,7 +89,7 @@ export default function Products() {
 
     return (
         <div className="slider-container my-5 flex flex-col justify-center">
-            <div className='flex justify-center items-center text-center px-3 cursor-pointer text-lg text-zinc-400'>
+            <div className='categories flex justify-center items-center text-center px-3 cursor-pointer text-lg text-zinc-400'>
                 <ul className="flex gap-5">
                     <li>
                         <button onClick={() => setSelectedCategory("ALL")} className={selectedCategory === "ALL" ? "selected" : ""}>ALL</button>
