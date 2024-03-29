@@ -24,18 +24,14 @@ const wishSlice = createSlice({
             const existedProductIndex = state.likeList.findIndex(item => item.id === id);
 
             if (existedProductIndex !== -1) {
-                // Product already exists in wishlist, update quantity
                 state.likeList[existedProductIndex].quantity += quantity;
             } else {
-                // Product is new in wishlist, add it
                 state.likeList.push(action.payload);
             }
 
-            // Update total quantity and total amount
             state.likeCount = state.likeList.reduce((total, item) => total + item.quantity, 0);
             state.totalAmount = state.likeList.reduce((total, item) => total + (item.quantity * item.price), 0);
 
-            // Store updated wishlist data in localStorage
             storeInLocalStorage(state.likeList);
         },
         removeFromLike: (state, action) => {
@@ -47,7 +43,6 @@ const wishSlice = createSlice({
 
                 state.likeList.splice(index, 1);
 
-                // Store updated wishlist data in localStorage
                 storeInLocalStorage(state.likeList);
             }
         },

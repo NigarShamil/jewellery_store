@@ -26,18 +26,14 @@ const cartSlice = createSlice({
       const existingProductIndex = state.carts.findIndex(item => item.id === id);
 
       if (existingProductIndex !== -1) {
-        // Product already exists in cart, update quantity
         state.carts[existingProductIndex].quantity += quantity;
       } else {
-        // Product is new in cart, add it
         state.carts.push(action.payload);
       }
 
-      // Update total quantity and total amount
       state.itemCount = state.carts.reduce((total, item) => total + item.quantity, 0);
       state.totalAmount = state.carts.reduce((total, item) => total + (item.quantity * item.price), 0);
 
-      // Store updated cart data in localStorage
       storeInLocalStorage(state.carts);
     },
     removeFromCart: (state, action) => {
@@ -49,7 +45,6 @@ const cartSlice = createSlice({
 
         state.carts.splice(index, 1);
 
-        // Store updated cart data in localStorage
         storeInLocalStorage(state.carts);
       }
     },
@@ -78,7 +73,6 @@ const cartSlice = createSlice({
       state.itemCount = 0;
       state.totalAmount = 0;
 
-      // Clear cart data from localStorage
       storeInLocalStorage([]);
     },
     getCartTotal: (state) => {

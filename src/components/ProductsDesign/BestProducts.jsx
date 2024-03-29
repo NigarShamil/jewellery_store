@@ -61,8 +61,8 @@ export default function Products() {
         dispatch(addToCart({
             id: product.id,
             title: product.title,
-            image: product.images[0], // Assuming the first image is used
-            quantity: 1, // Default quantity is 1
+            image: product.images[0], 
+            quantity: 1, 
             price: product.price
         }));
     };
@@ -71,8 +71,8 @@ export default function Products() {
         dispatch(addToLike({
             id: product.id,
             title: product.title,
-            image: product.images[0], // Assuming the first image is used
-            quantity: 1, // Default quantity is 1
+            image: product.images[0], 
+            quantity: 1, 
             price: product.price
         }))
     }
@@ -84,7 +84,7 @@ export default function Products() {
     if (selectedCategory !== "ALL") {
         filteredProducts = products.filter(product => product.category === selectedCategory);
     } else {
-        filteredProducts = products.slice(3, 8); // Default subset when no category is selected
+        filteredProducts = products.slice(3, 8); 
     }
 
     return (
@@ -106,12 +106,12 @@ export default function Products() {
                     <div key={product.id} className="product flex flex-col justify-center items-center text-center p-5 cursor-pointer transform transition-transform duration-500 hover:scale-10">
                         <div
                             className="pro-img-container w-[280px] relative"
-                            onMouseOver={() => handleHover(index)} // Set hovered index on mouse over
-                            onMouseOut={handleMouseOut} // Reset hovered index on mouse out
+                            onMouseOver={() => handleHover(index)} 
+                            onMouseOut={handleMouseOut} 
                         >
                             <img
                                 className="pro-img"
-                                src={hoveredIndex === index ? product.images[1] : product.images[0]} // Use second image on hover
+                                src={hoveredIndex === index ? product.images[1] : product.images[0]} 
                                 alt={product.title}
                             />
                             <div className={`overlay  absolute left-[80%] bottom-[75%] ${hoveredIndex === index ? 'visible' : 'hidden'}`} >

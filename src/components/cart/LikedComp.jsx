@@ -13,8 +13,8 @@ const LikedComp = ({ liked }) => {
         dispatch(addToCart({
             id: liked.id,
             title: liked.title,
-            image: liked.image, // Assuming the first image is used
-            quantity: 1, // Default quantity is 1
+            image: liked.image, 
+            quantity: 1, 
             price: liked.price
         }));
     };

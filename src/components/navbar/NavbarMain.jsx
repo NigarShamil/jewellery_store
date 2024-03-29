@@ -13,7 +13,6 @@ const NavbarMain = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Change the state based on the scroll position
       if (window.pageYOffset > 0) {
         setIsFixed(true);
       } else {
@@ -21,10 +20,8 @@ const NavbarMain = () => {
       }
     };
 
-    // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
