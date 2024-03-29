@@ -4,6 +4,9 @@
 .logo {
   font-family: "Fleur De Leah", cursive;
 }
+.call{
+  display: flex;
+}
 
 .icons span:hover,
 .call:hover,
@@ -87,6 +90,12 @@
     display: none;
   }
   .up-navbar-right .links {
+    display: none;
+  }
+  .wholeNav .line{
+    font-size: 0.8rem;
+  }
+  .call{
     display: none;
   }
 }

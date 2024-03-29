@@ -23,11 +23,15 @@
 @media screen and (max-width: 500px) and (min-width: 300px){
     .lookBook{
         width: 300px;
+        margin-top: 1.5rem;
     }
     .look_banner {
         width: 300px;
     }
     .pop{
         width: 200px;
+    }
+    .pop .pop_title{
+        height: 140px;
     }
 }

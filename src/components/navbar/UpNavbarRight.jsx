@@ -36,7 +36,7 @@ const UpNavbarRight = () => {
                 <span className='flex justify-center gap-2 items-center text-zinc-400 cursor-pointer'>Links<FaChevronDown size={12} /></span>
             </div>
             {showDropdown && (
-                <div className="dropdown-content text-stone-400">
+                <div className="dropdown-content text-stone-400 ">
                     <span className='cursor-pointer'><RiFacebookFill size={15} /></span>
                     <span className='cursor-pointer'><FaInstagram size={15} /></span>
                     <span className='cursor-pointer'><RiTwitterXFill size={15} /></span>

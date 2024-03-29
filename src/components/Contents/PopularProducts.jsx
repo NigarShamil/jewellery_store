@@ -15,7 +15,7 @@ const PopularProducts = () => {
                             src={product.images && product.images[0]}
                             alt={product.title}
                         />
-                        <div className="bg-white w-[280px] h-[85px] text-sm p-2 pop">
+                        <div className="bg-white w-[280px] h-[85px] text-sm p-2 pop_title">
                             <p className="pb-2">{product.title}</p>
                             <div className="stars flex gap-2 pb-2  text-zinc-400 "><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></div>
                             <h3>${product.price}</h3>
