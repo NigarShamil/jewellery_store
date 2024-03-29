@@ -13,9 +13,8 @@ const SigIn = () => {
       dispatch(authActions.login())
    }
    return (
-      <div className='form'>
-         <img src="https://molla-theme.myshopify.com/cdn/shop/files/login-bg.jpg?v=1614728546" className='relative h-[700px] w-[100%]' />
-         <form onSubmit={handleSubmit} className=' form_sign  text-zinc-500 bg-white w-[500px]'>
+      <div className='form bg-[#BCB88A] flex justify-center items-center h-[100vh]'>
+         <form onSubmit={handleSubmit} className=' form_sign  text-zinc-500 bg-white w-[500px] h-[400px] p-4'>
             <h2 className='text-[#cc9966] text-2xl my-3'>Sign In</h2>
             <div className="email flex flex-col py-2">
                <label htmlFor="email" >Email address *</label>

@@ -23,15 +23,7 @@
 .logIn {
     font-family: "Poppins", sans-serif;
 }
-.form_sign{
-    position: absolute;
-    top: 70%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    padding: 2rem; 
-    background-color: white; 
-    max-width: 90%; 
-}
+
 
 /* @media screen and (max-width: 1000px) and (min-width: 700px){
     .form form{

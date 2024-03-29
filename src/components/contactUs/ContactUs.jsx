@@ -19,7 +19,7 @@ const ContactUs = () => {
                         <p className='text-lg'>Who we are</p>
                     </div>
                 </div>
-                <div className="contact_info flex flex-wrap m-3 border-b py-4">
+                <div className="contact_info flex m-3 border-b py-4">
                     <div className='info w-[600px] '>
                         <div className="main_info w-[500px]">
                             <h3 className='text-2xl'>Contact Infromation</h3>
