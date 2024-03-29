@@ -229,21 +229,40 @@
     max-width: 100%;
     cols: auto;
   }
-  .cartContent{
+
+  .cartContent {
     display: flex;
     flex-direction: column;
   }
-  .checkout .check_form{
+
+  .checkout .check_form {
     width: 300px;
   }
-  .checkout .calculate{
+
+  .checkout .calculate {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .checkout .check_btn{
+
+  .checkout .check_btn {
     width: 250px;
+  }
+
+  .contact .contact_email input {
+    width: 280px;
+  }
+
+  .contact .shipping_address .id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .shipping_address input {
+    width: 280px;
   }
 
 }
