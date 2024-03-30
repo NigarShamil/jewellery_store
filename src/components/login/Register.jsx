@@ -1,26 +1,98 @@
 
-import React from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+import React, { useState } from 'react';
+import { useDispatch } from "react-redux"
+import { useNavigate } from "react-router-dom"
+import { authActions } from '../../store/authSlice'
+import "./login.css"
 
 const Register = () => {
-    return (
-        <div className='w-[600px] bg-gray-200 p-4 '>
-            <div className='form_register p-4 text-zinc-500 '>
-                <div className="email flex flex-col py-2">
-                    <label htmlFor="email" >Your email address *</label>
-                    <input type="email" name="email" id="email" className='h-10' />
-                </div>
-                <div className="password flex flex-col py-2">
-                    <label htmlFor="password" >Password *</label>
-                    <input type="password" name="password" id="password" className='h-10' />
-                </div>
-                <div className="btn_field flex flex-col py-3">
-                    <div className='py-2'><input type="checkbox" name="check" id="check" /> Subscribe to stya updated with new products and offers!</div>
-                    <div className='signIn flex justify-center items-center gap-2'>Sign In <FaArrowRightLong className='sign_logo' /></div>
-                </div>
-            </div>
-        </div>
-    )
-}
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errors, setErrors] = useState([]);
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
 
-export default Register
+    const handleRegisterSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        dispatch(authActions.login());
+        navigate('/my-account')
+
+        if (password !== confirmPassword) {
+            setErrors(["Password and confirm password must match"]);
+            setIsSubmitting(false);
+            return;
+        }
+
+        if (email.length < 5) {
+            setErrors(["Email must be at least 5 characters long"]);
+            setIsSubmitting(false);
+            return;
+        }
+
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        setEmail("");
+        setPassword("");
+        setConfirmPassword("");
+        setIsSubmitting(false);
+    };
+
+    return (
+        <div className='register p-4 h-[100vh] flex flex-col justify-center items-center '>
+            <form onSubmit={handleRegisterSubmit} className="form_register bg-white p-4 text-zinc-500 w-[600px] flex flex-col gap-y-2 ">
+                <h2 className='text-3xl font-medium text-center text-[#cc9966] py-2'>Register</h2>
+                {errors.length > 0 && (
+                    <ul>
+                        {errors.map((error) => (
+                            <li
+                                key={error}
+                                className="bg-red-100 text-red-500 px-4 py-2 rounded"
+                            >
+                                {error}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+                <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    required
+                    minLength={5} 
+                    placeholder="Email"
+                    className="px-4 py-2 rounded bg-gray-100"
+                />
+                <input
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    type="password"
+                    required
+                    placeholder="Password"
+                    className="px-4 py-2 rounded bg-gray-100"
+                />
+                <input
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    type="password"
+                    required
+                    placeholder="Confirm password"
+                    className="px-4 py-2 rounded bg-gray-100"
+                />
+
+                <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-slate-400 text-white text-lg mt-3 disabled:bg-gray-500 py-2 rounded"
+                >
+                    Submit
+                </button>
+            </form>
+        </div>
+    );
+};
+
+export default Register;
+

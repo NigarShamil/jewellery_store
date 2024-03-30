@@ -27,7 +27,7 @@ const Footer = () => {
                         <p><GiCutDiamond size={20} /></p>
                         <p className='logo text-2xl'>Joyería</p>
                     </div>
-                    <p className='pb-3 text-zinc-400'>Copyright © 2020 Molla Store. All Rights Reserved.</p>
+                    <p className='pb-3 text-zinc-400'>Copyright © 2024 Joyería. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

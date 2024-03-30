@@ -9,6 +9,9 @@
 .cartField {
   font-family: "Poppins", sans-serif;
 }
+.cartField{
+  width: 700px;
+}
 
 .cart_title {
   position: absolute;
@@ -163,11 +166,21 @@
   }
 }
 
-@media screen and (max-width: 700px) and (min-width: 500px) {
+@media screen and (max-width: 720px) and (min-width: 500px) {
   .cart_title {
     left: 28%;
   }
-
+  .cartField{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cartField .cartText_field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
   .cartField .border {
     width: 80px;
     font-size: 12px;

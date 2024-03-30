@@ -12,10 +12,10 @@ const CartComp = ({ cart }) => {
     return (
         <>
             <div>
-                <div className='cartField my-6 flex flex-col sm:flex-row items-center justify-between border-t p-2 sm:w-[650px]'>
+                <div className='cartField my-6 flex flex-wrap items-center justify-between border-t p-2'>
                     <div className='cartText_field flex justify-center items-center'>
                         <img className='w-[100px] h-[100px] object-fill' src={cart?.image} alt="" />
-                        <div className='text-sm px-2'>{cart?.title}</div>
+                        <div className='name_product w-[250px] text-wrap text-sm px-2'>{cart?.title}</div>
                         <div>{cart?.description}</div>
                     </div>
                     <div className='cart_price text-sm'>{cart?.price} $</div>

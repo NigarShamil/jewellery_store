@@ -15,7 +15,7 @@ const ContactUs = () => {
                 <div className='about_cover mb-5'>
                     <img src="https://molla-theme.myshopify.com/cdn/shop/files/about-header-bg.jpg?v=1614728545" className='about_banner relative' />
                     <div className='banner_text text-center text-white'>
-                        <h3 className='text-2xl'>About Us</h3>
+                        <h3 className='text-2xl'>Contact Us</h3>
                         <p className='text-lg'>Who we are</p>
                     </div>
                 </div>

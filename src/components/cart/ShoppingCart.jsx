@@ -26,7 +26,7 @@ const ShoppingCart = () => {
                 </div>
                 {
                     carts?.length > 0 ? (
-                        <div className='cart_view'>
+                        <div className='cart_view flex flex-col justify-center items-center'>
                             {
                                 carts.map((cart, index) => (
                                     <CartComp key={index} cart={cart} />

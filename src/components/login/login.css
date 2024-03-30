@@ -7,11 +7,13 @@
     padding: 10px;
     width: 100px;
 }
-.signIn:hover{
+
+.signIn:hover {
     background-color: #cc9966;
     color: #fff;
     transition: all .3s ease-in-out;
 }
+
 .sign_logo {
     color: #cc9966;
 }
@@ -24,21 +26,33 @@
     font-family: "Poppins", sans-serif;
 }
 
+.register {
+    background-image: linear-gradient(#8399a2, #eef2f3);
+}
 
-/* @media screen and (max-width: 1000px) and (min-width: 700px){
-    .form form{
-        left: 20%;
+.signForm {
+    background-image: linear-gradient(#beb15b, #d5cfac);
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 350px) {
+    .register .form_register {
+        width: 350px;
     }
 }
-@media screen and (max-width: 700px) and (min-width: 500px){
-    .form form{
-        width: 320px;
-        left: 15%;
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    .account .myAccount {
+        left: 35%;
     }
 }
-@media screen and (max-width: 500px) and (min-width: 350px){
-    .form form{
-        width: 300px;
-        left: 10%;
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .account .myAccount {
+        left: 40%;
     }
-} */
+}
+@media screen and (max-width: 500px) and (min-width: 350px) {
+    .account .myAccount {
+        left: 30%;
+    }
+}
