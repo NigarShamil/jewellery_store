@@ -15,6 +15,7 @@ import Wishlist from './components/cart/Wishlist'
 import SigIn from './components/login/SigIn'
 import MyAccount from './components/login/MyAccount'
 import Checkout from './components/cart/Checkout'
+import PageContainer from './components/container/PageContainer'
 
 
 
@@ -24,21 +25,23 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products/:id" element={<ProductDetail/>} />
-          <Route path="/signIn" element={<SigIn/>} />
-          <Route path="/my-account" element={<MyAccount/>} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/faq" element={<Faq/>} />
-          <Route path="/cart" element={<ShoppingCart/>} />
-          <Route path="/checkout" element={<Checkout/>} />
-          <Route path="/like" element={<Wishlist/>} />
-          <Route path="/contact" element={<ContactUs/>} />
-        </Routes>
-        <Footer />
+        <PageContainer>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/signIn" element={<SigIn />} />
+            <Route path="/my-account" element={<MyAccount />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/like" element={<Wishlist />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+          <Footer />
+        </PageContainer>
       </Router>
     </>
   )
