@@ -21,7 +21,7 @@ export const SliderComp = () => {
         <div className='slider-container'>
             <Slider {...settings}>
                 <div className='slider-slide w-[100%] relative'>
-                    <img className='slider_cover w-[100%] h-[80vh]' src="https://molla-theme.myshopify.com/cdn/shop/files/slider-1.jpg?v=1614737567" alt="Slider 1" />
+                    <img className='slider_cover w-[100%] h-[80vh] object-cover object-right-[0px_0px]' src="https://molla-theme.myshopify.com/cdn/shop/files/slider-1.jpg?v=1614737567" alt="Slider 1" />
                     <div className='slider-text-overlay_st '>
                         <div className='slide_title mb-3 text-xl'>Deal of the day</div>
                         <div className='slide-subtitle text-7xl'>Our Favorite Things</div>
@@ -30,7 +30,7 @@ export const SliderComp = () => {
                     </div>
                 </div>
                 <div className='slider-slide w-[100%] relative'>
-                    <img className='slider_cover w-[100%] h-[80vh]' src="https://molla-theme.myshopify.com/cdn/shop/files/slider-2.jpg?v=1614737569" alt="Slider 2" />
+                    <img className='slider_cover w-[100%] h-[80vh] object-cover object-right-[0px_0px]' src="https://molla-theme.myshopify.com/cdn/shop/files/slider-2.jpg?v=1614737569" alt="Slider 2" />
                     <div className='slider-text-overlay_nd'>
                         <div className='slide_title mb-3 text-xl'>Deal of the day</div>
                         <div className='slide-subtitle text-5xl normal w-[400px]'>DISCOVER OUR </div>
