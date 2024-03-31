@@ -109,8 +109,7 @@
 
 @media screen and (max-width: 500px) and (min-width: 300px) {
     .contact_cover .banner_text {
-        left: 35%;
-        bottom: 70%;
+        display: none;
     }
 
     .office .two_piece {
