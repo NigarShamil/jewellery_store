@@ -122,9 +122,10 @@
     }
 }
 @media screen and (max-width: 500px) and (min-width: 350px) {
-    .banner_text{
-        bottom: 50%;
-        left: 40%;
+    .about .banner_text{
+        position: absolute;
+        bottom: 55%;
+        left: 20%;
     }
     .banner_text h2{
         font-size: 1rem;

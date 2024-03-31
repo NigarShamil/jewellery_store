@@ -65,56 +65,59 @@ const About = () => {
                         <img src="https://molla-theme.myshopify.com/cdn/shop/files/logo-4_240x.png?v=1614728542" />
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-center my-5'>
-                    <div className='text-3xl font-medium m-5 '>Meet Our Team</div>
-                    <div className="team flex flex-wrap gap-[30px] mt-5">
-                        <div className='first_one w-[300px]'>
-                            <img src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                            <div className='img_text text-center flex flex-col items-center'>
-                                <h3 className='flex flex-col text-center'>
-                                    Samanta Grey
-                                    <span>Sales & Marketing Manager</span>
-                                </h3>
-                                <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
-                                <div className='flex gap-5 pt-5'>
-                                    <FaFacebookF size={20} className='sm' />
-                                    <RiTwitterXFill size={20} className='sm' />
-                                    <FaInstagram size={20} className='sm' />
+
+                
+                    <div className='flex flex-col justify-center items-center my-5'>
+                        <div className='text-3xl font-medium m-5 '>Meet Our Team</div>
+                        
+                        <div className="team flex flex-wrap gap-[30px] mt-5">
+                            <div className='first_one w-[300px]'>
+                                <img src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                <div className='img_text text-center flex flex-col items-center'>
+                                    <h3 className='flex flex-col text-center'>
+                                        Samanta Grey
+                                        <span>Sales & Marketing Manager</span>
+                                    </h3>
+                                    <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <div className='flex gap-5 pt-5'>
+                                        <FaFacebookF size={20} className='sm' />
+                                        <RiTwitterXFill size={20} className='sm' />
+                                        <FaInstagram size={20} className='sm' />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='second_one w-[300px]'>
-                            <img src="https://images.unsplash.com/photo-1506634572416-48cdfe530110?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                            <div className='img_text text-center flex flex-col items-center'>
-                                <h3 className='flex flex-col text-center'>
-                                    Bruce Sutton
-                                    <span>Founder & CEO</span>
-                                </h3>
-                                <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
-                                <div className='flex gap-5 pt-5'>
-                                    <FaFacebookF size={20} className='sm' />
-                                    <RiTwitterXFill size={20} className='sm' />
-                                    <FaInstagram size={20} className='sm' />
+                            <div className='second_one w-[300px]'>
+                                <img src="https://images.unsplash.com/photo-1506634572416-48cdfe530110?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                <div className='img_text text-center flex flex-col items-center'>
+                                    <h3 className='flex flex-col text-center'>
+                                        Bruce Sutton
+                                        <span>Founder & CEO</span>
+                                    </h3>
+                                    <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <div className='flex gap-5 pt-5'>
+                                        <FaFacebookF size={20} className='sm' />
+                                        <RiTwitterXFill size={20} className='sm' />
+                                        <FaInstagram size={20} className='sm' />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='third_one w-[300px]'>
-                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                            <div className='img_text text-center flex flex-col items-center'>
-                                <h3 className='flex flex-col text-center'>
-                                    Product Manager
-                                    <span>Product Manager</span>
-                                </h3>
-                                <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
-                                <div className='flex gap-5 pt-5'>
-                                    <FaFacebookF size={20} className='sm' />
-                                    <RiTwitterXFill size={20} className='sm' />
-                                    <FaInstagram size={20} className='sm' />
+                            <div className='third_one w-[300px]'>
+                                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                <div className='img_text text-center flex flex-col items-center'>
+                                    <h3 className='flex flex-col text-center'>
+                                        Product Manager
+                                        <span>Product Manager</span>
+                                    </h3>
+                                    <p className='pt-4'> Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <div className='flex gap-5 pt-5'>
+                                        <FaFacebookF size={20} className='sm' />
+                                        <RiTwitterXFill size={20} className='sm' />
+                                        <FaInstagram size={20} className='sm' />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </>
     )
