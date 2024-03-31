@@ -38,7 +38,7 @@ const SearchField = () => {
             </div>
 
             {searchTerm.length > 0 && filteredData.length > 0 && (
-                <ul className="search-results bg-white text-[#cc9966] z-50 overflow-y-auto  absolute left-[10%] top-[18%] w-[400px]">
+                <ul className="search-results bg-white text-[#cc9966] z-50 overflow-y-auto  absolute w-[400px]">
                     {filteredData.map((product) => (
                         <li key={product.id} onClick={() => navigate(`/products/${product.id}`)} className='cursor-pointer p-1 border-b hover:bg-gray-50'>
                             {product.title}

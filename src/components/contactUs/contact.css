@@ -25,18 +25,23 @@
     flex-wrap: wrap;
 }
 }
-@media screen and (max-width: 1950px) and (min-width: 1500px){
-    .banner_text {
-        bottom: 63%;
-        left: 50%;
+@media screen and (max-width: 1900px) and (min-width: 1500px) {
+    .contact_cover .banner_text {
+        left: 47%;
+        bottom: 50%;
+    }
+}
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+    .contact_cover .banner_text {
+        left: 45%;
+        bottom: 55%;
     }
 }
 
-
 @media screen and (max-width: 700px) and (min-width: 500px) {
-    .banner_text {
-        bottom: 50%;
-        left: 40%;
+    .contact_cover .banner_text {
+        left: 35%;
+        bottom: 65%;
     }
 
     .contact .info {
@@ -103,9 +108,9 @@
 }
 
 @media screen and (max-width: 500px) and (min-width: 300px) {
-    .banner_text {
-        bottom: 57%;
-        left: 40%;
+    .contact_cover .banner_text {
+        left: 35%;
+        bottom: 70%;
     }
 
     .office .two_piece {

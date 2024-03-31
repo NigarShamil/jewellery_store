@@ -42,11 +42,19 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media screen and (max-width: 1900px) and (min-width: 1500px) {
+@media screen and (max-width: 1900px) and (min-width: 1000px) {
   .searchField .search-results {
-    top: 8%;
+    top: 12%;
+    left: 10%;
   }
 }
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .searchField .search-results {
+    top: 13%;
+    left: 10%;
+  }
+}
+
 
 
 @media screen and (max-width: 800px) and (min-width: 400px) {

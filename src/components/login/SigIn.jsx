@@ -29,7 +29,7 @@ const SignIn = () => {
    };
 
    return (
-      <div className='signForm flex justify-center items-center h-[100vh]'>
+      <div className='signForm flex justify-center items-center h-[80vh]'>
          <form onSubmit={handleSubmit} className='form_sign text-zinc-500 bg-white w-[500px] h-[400px] p-4'>
             <h2 className='text-[#cc9966] text-2xl my-3 text-center font-medium'>Sign In</h2>
             <div className='email flex flex-col py-2'>

@@ -41,7 +41,7 @@ const Register = () => {
     };
 
     return (
-        <div className='register p-4 h-[100vh] flex flex-col justify-center items-center '>
+        <div className='register p-4 h-[80vh] flex flex-col justify-center items-center '>
             <form onSubmit={handleRegisterSubmit} className="form_register bg-white p-4 text-zinc-500 w-[600px] flex flex-col gap-y-2 ">
                 <h2 className='text-3xl font-medium text-center text-[#cc9966] py-2'>Register</h2>
                 {errors.length > 0 && (
