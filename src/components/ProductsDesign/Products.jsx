@@ -17,7 +17,7 @@ export default function Products() {
     const navigate = useNavigate();
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState("ALL");
-    const [slidesToShow, setSlidesToShow] = useState(4); 
+    const [slidesToShow, setSlidesToShow] = useState(4);
 
     useEffect(() => {
         const updateSlidesToShow = () => {
@@ -61,8 +61,8 @@ export default function Products() {
         dispatch(addToCart({
             id: product.id,
             title: product.title,
-            image: product.images[0], 
-            quantity: 1, 
+            image: product.images[0],
+            quantity: 1,
             price: product.price
         }));
     };
@@ -71,8 +71,8 @@ export default function Products() {
         dispatch(addToLike({
             id: product.id,
             title: product.title,
-            image: product.images[0], 
-            quantity: 1, 
+            image: product.images[0],
+            quantity: 1,
             price: product.price
         }))
     }
@@ -97,27 +97,29 @@ export default function Products() {
             </div>
             <Slider {...settings}>
                 {filteredProducts.slice(0, 5).map((product, index) => (
-                    <div key={product.id} className="product flex flex-col justify-center items-center text-center p-5 cursor-pointer transform transition-transform duration-500 hover:scale-10">
-                        <div
-                            className="pro-img-container w-[280px] relative"
-                            onMouseOver={() => handleHover(index)} 
-                            onMouseOut={handleMouseOut} 
-                        >
-                            <img
-                                className="pro-img"
-                                src={hoveredIndex === index ? product.images[1] : product.images[0]} 
-                                alt={product.title}
-                            />
-                            <div className={`overlay  absolute left-[80%] bottom-[75%] ${hoveredIndex === index ? 'visible' : 'hidden'}`} >
-                                <div onClick={() => handleAddToLike(product)} className="likeProduct border rounded-full p-1"><CiHeart size={20} /></div>
-                                <div onClick={() => navigate(`products/${product?.id}`)} className="viewProduct border rounded-full p-1"><LiaBinocularsSolid size={20} /></div>
+                    <div className="product-wrapper justify-center items-center w-full">
+                        <div key={product.id} className="product flex flex-col justify-center items-center text-center p-5 cursor-pointer transform transition-transform duration-500 hover:scale-10">
+                            <div
+                                className="pro-img-container w-[280px] relative"
+                                onMouseOver={() => handleHover(index)}
+                                onMouseOut={handleMouseOut}
+                            >
+                                <img
+                                    className="pro-img"
+                                    src={hoveredIndex === index ? product.images[1] : product.images[0]}
+                                    alt={product.title}
+                                />
+                                <div className={`overlay  absolute left-[80%] bottom-[75%] ${hoveredIndex === index ? 'visible' : 'hidden'}`} >
+                                    <div onClick={() => handleAddToLike(product)} className="likeProduct border rounded-full p-1"><CiHeart size={20} /></div>
+                                    <div onClick={() => navigate(`products/${product?.id}`)} className="viewProduct border rounded-full p-1"><LiaBinocularsSolid size={20} /></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="pro-text bg-white w-[280px] h-[85px] text-sm p-2">
-                            <p className="pb-3">{product.title}</p>
-                            <h3>${product.price}</h3>
-                            <div className="stars  gap-2 justify-center items-center text-center pt-2 text-zinc-400 hidden"><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /> <span>No reviews</span></div>
-                            <div className="add justify-center items-center text-center border-b border-black gap-2 pt-3 hover:border hover:bg-black hover:p-2  hover:text-white hidden" onClick={() => handleAddToCart(product)}><LiaCartPlusSolid /> ADD TO CART</div>
+                            <div className="pro-text bg-white w-[280px] h-[85px] text-sm p-2">
+                                <p className="pb-3">{product.title}</p>
+                                <h3>${product.price}</h3>
+                                <div className="stars  gap-2 justify-center items-center text-center pt-2 text-zinc-400 hidden"><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /> <span>No reviews</span></div>
+                                <div className="add justify-center items-center text-center border-b border-black gap-2 pt-3 hover:border hover:bg-black hover:p-2  hover:text-white hidden" onClick={() => handleAddToCart(product)}><LiaCartPlusSolid /> ADD TO CART</div>
+                            </div>
                         </div>
                     </div>
                 ))}

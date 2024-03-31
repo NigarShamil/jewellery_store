@@ -103,6 +103,7 @@ export default function Products() {
             </div>
             <Slider {...settings}>
                 {filteredProducts.map((product, index) => (
+                    <div className="product-wrapper justify-center items-center w-full">
                     <div key={product.id} className="product flex flex-col justify-center items-center text-center p-5 cursor-pointer transform transition-transform duration-500 hover:scale-10">
                         <div
                             className="pro-img-container w-[280px] relative"
@@ -125,6 +126,7 @@ export default function Products() {
                             <div className="stars  gap-2 justify-center items-center text-center pt-2 text-zinc-400 hidden"><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /> <span>No reviews</span></div>
                             <div className="add justify-center items-center text-center border-b border-black gap-2 pt-3 hover:border hover:bg-black hover:p-2  hover:text-white hidden" onClick={() => handleAddToCart(product)}><LiaCartPlusSolid /> ADD TO CART</div>
                         </div>
+                    </div>
                     </div>
                 ))}
             </Slider>

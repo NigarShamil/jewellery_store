@@ -12,8 +12,7 @@ export const MiniCart = ({ cartOpen, setCartOpen }) => {
   const dispatch = useDispatch()
   const { carts, totalAmount, itemCount } = useSelector(state => state.carts)
 
-
-  console.log(carts, totalAmount, itemCount, 'carts');
+  // console.log(carts, totalAmount, itemCount, 'carts');
 
   const closeCart = () => {
     setCartOpen(false)

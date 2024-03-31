@@ -44,6 +44,11 @@
     }
 }
 
+@media screen and (max-width: 1900px) and (min-width: 1500px) {
+    .account .myAccount {
+        left: 45%;
+    }
+}
 @media screen and (max-width: 700px) and (min-width: 500px) {
     .account .myAccount {
         left: 35%;
