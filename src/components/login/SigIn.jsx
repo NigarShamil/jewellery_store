@@ -14,8 +14,8 @@ const SignIn = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault();
-      console.log("Registered Emails:", registeredEmails);
-      console.log("Entered Email:", email);
+      // console.log("Registered Emails:", registeredEmails);
+      // console.log("Entered Email:", email);
       if (registeredEmails.includes(email)) {
          dispatch(authActions.login());
          navigate('/my-account');
