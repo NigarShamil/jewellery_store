@@ -42,8 +42,8 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media screen and (max-width: 1900px) and (min-width: 1400px){
-  .searchField .search-results{
+@media screen and (max-width: 1900px) and (min-width: 1400px) {
+  .searchField .search-results {
     top: 8%;
   }
 }
@@ -114,9 +114,19 @@
     font-size: 0.8rem;
   }
 
+  .up-navbar-right .links {
+    display: none;
+  }
+
   .call {
     display: none;
   }
+
+  .dropdown-toggle {
+    display: flex;
+    z-index: 30;
+  }
+
   .dropdown-content {
     width: 270px;
     position: absolute;
