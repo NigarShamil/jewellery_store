@@ -4,7 +4,8 @@
 .logo {
   font-family: "Fleur De Leah", cursive;
 }
-.call{
+
+.call {
   display: flex;
 }
 
@@ -37,6 +38,17 @@
   display: none;
 }
 
+.searchField .search-results {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 1900px) and (min-width: 1400px){
+  .searchField .search-results{
+    top: 8%;
+  }
+}
+
+
 @media screen and (max-width: 800px) and (min-width: 400px) {
   .dropdown-toggle {
     display: flex;
@@ -44,11 +56,14 @@
   }
 
   .dropdown-content {
+    position: absolute;
+    top: 5%;
+    right: 3%;
     display: grid;
     grid-template-columns: repeat(3, 70px);
     gap: 10px;
-    box-shadow: #222;
-    ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
   }
 
   .dropdown-content span:hover {
@@ -65,37 +80,52 @@
 }
 
 @media screen and (max-width: 700px) and (min-width: 500px) {
+
   .right .like-icon,
   .right .icons {
-   font-size: 8px;
+    font-size: 8px;
   }
-  .right .qty{
+
+  .right .qty {
     font-size: 12px;
     width: 18px;
     height: 18px;
   }
-  .fixed .centered{
+
+  .fixed .centered {
     width: 100%;
   }
-  .centered .joyeria{
+
+  .centered .joyeria {
     min-width: 80px;
   }
-  .search input{
+
+  .search input {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 500px) and (min-width: 300px){
-  .searchField .search{
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .searchField .search {
     display: none;
   }
-  .up-navbar-right .links {
-    display: none;
-  }
-  .wholeNav .line{
+
+  .wholeNav .line {
     font-size: 0.8rem;
   }
-  .call{
+
+  .call {
     display: none;
+  }
+  .dropdown-content {
+    width: 270px;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
   }
 }

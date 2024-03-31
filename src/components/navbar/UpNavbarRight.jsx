@@ -36,13 +36,13 @@ const UpNavbarRight = () => {
                 <span className='flex justify-center gap-2 items-center text-zinc-400 cursor-pointer'>Links<FaChevronDown size={12} /></span>
             </div>
             {showDropdown && (
-                <div className="dropdown-content text-stone-400 ">
+                <div className="dropdown-content text-[#cc9966] bg-white border rounded h-[80px] p-2">
                     <span className='cursor-pointer'><RiFacebookFill size={15} /></span>
                     <span className='cursor-pointer'><FaInstagram size={15} /></span>
                     <span className='cursor-pointer'><RiTwitterXFill size={15} /></span>
                     <span className='cursor-pointer'><FaGooglePlusG size={15} /></span>
                     <span className='cursor-pointer'><FaYoutube size={15} /></span>
-                    <div onClick={() => navigate(isLoggedIn ? '/my-account' : '/signIn')} className='login flex items-center font-10 text-gray-400 gap-2'>
+                    <div onClick={() => navigate(isLoggedIn ? '/my-account' : '/signIn')} className='login flex items-center font-10 text-[#cc9966] text-sm gap-1 '>
                         <FaUser size={12} />{isLoggedIn ? 'My Account' : 'Login'}
                     </div>
                 </div>
